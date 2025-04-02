@@ -1,0 +1,116 @@
+a{
+  text-decoration: none;
+  color: black;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  padding-top: 66px;
+}
+body #topbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 6;
+  color: black;
+}
+body #topbar .navbar-brand {
+  font-size: 26px;
+}
+body #topbar #navbarNav {
+  margin-left: 30px;
+  font-size: 18px;
+}
+body #box {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+body #box #title {
+  margin-top: 10px;
+  font-size: 33px;
+  text-align: center;
+}
+body #box .card-text {
+  margin-left: 15px;
+}
+body #box #content {
+  padding: 20px;
+  margin: 0px 10px 0px 10px;
+  background-color: #F5F3F7;
+}
+body #box .search {
+  background-image: url(../images/好看.jpeg);
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+body #box .search .sname {
+  position: absolute;
+  bottom: 330px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 50px;
+  color: white;
+  font-style: italic;
+}
+body #box .search .topbar-search {
+  position: absolute;
+  bottom: 240px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 550px;
+  height: 60px;
+}
+body #box .search .topbar-search .list-group {
+  z-index: 100;
+  width: 100%;
+  opacity: 0.9;
+}
+body #box #card-show {
+  display: flex;
+  padding: 20px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body #box #card-show .card {
+  width: 300px;
+  border-radius: 6px;
+}
+body #box #card-show .card .cover {
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body #box #card-show .card:hover {
+  box-shadow: 0 0 12px black;
+}
+#newstabs {
+  padding: 20px;
+}
+#newstabs .tab-link {
+  color: black;
+  font-size: 20px;
+}
+#newstabs .listitem {
+  padding: 10px;
+  overflow: hidden;
+}
+#newstabs .listitem img {
+  float: left;
+  width: 150px;
+  margin-right: 15px;
+}
+#newstabs .listitem:hover {
+  box-shadow: 0 0 12px black;
+}
+#newstabs .listitem .card-text {
+  margin-top: 18px;
+}

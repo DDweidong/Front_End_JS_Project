@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web-index</title>
+    <link rel="stylesheet" href="../../../lib/bootstrap(框架)/css/bootstrap.min.css">
+    <script src="../../../lib/bootstrap(框架)/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../assets/style/index.css">
+    <!--引入echars-->
+    <script src="../../../lib/bootstrap(框架)/js/echars.js"></script>
+
+</head>
+<body>
+    <!--动态渲染-->
+    <div id="topbar">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../news/index.html">新闻网站</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="news">新闻中心</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../admin/login/index.html">登录</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--栅格-->
+    <div id="box">
+
+        <div class="search">
+          <div class="sname">新闻搜索</div>
+          <div class="form-floating mb-3 topbar-search">
+            <input type="text" class="form-control" id="topbar-search" placeholder="name@example.com">
+            <label for="floatingInput">搜索关键字</label>
+
+            <ul class="list-group" id="list-group">
+            </ul>
+          </div>
+
+        </div>
+        <br>
+        <hr>
+        <h4 style="margin-left: 10px;">最新发布：</h4>
+        <div id="card-show">
+        
+        </div>
+        
+        <hr/>
+        <div id="newstabs">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active tab-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#tab0" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">最新动态</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link tab-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">典型案例</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link tab-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">通知公告</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="tab0" role="tabpanel" aria-labelledby="home-tab" tabindex="0"></div>
+            <div class="tab-pane fade" id="tab1" role="tabpanel" aria-labelledby="profile-tab" tabindex="0"></div>
+            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="contact-tab" tabindex="0"></div>
+          </div>
+        </div>
+
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

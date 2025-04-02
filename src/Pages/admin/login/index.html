@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="../../../lib/bootstrap(框架)/css/bootstrap.min.css">
+    <script src="../../../lib/bootstrap(框架)/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+<body>
+    <div id="main">
+        <form id="logininfo" >
+            <div class="mb-3">
+                <h2>网站管理系统</h2>
+              <label for="exampleInputEmail1" class="form-label">用户名:</label>
+              <input type="text" class="form-control" required id="username" >
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">密码:</label>
+              <input type="password" class="form-control" required id="password">
+            </div>
+
+            <button type="submit" class="btn btn-primary">提交</button>
+            <div id="loginbad" class="form-text" style="display: none;" >用户名密码不匹配</div>
+        </form>
+
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

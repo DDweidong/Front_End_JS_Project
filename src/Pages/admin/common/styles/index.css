@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding-top: 66px;
+  }
+  body #topbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 6;
+  }
+  body #topbar #username {
+    font-size: 20px;
+  }
+  body #topbar #userphoto {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: pink;
+  }
+  body #box {
+    flex: 1;
+  }
+  body #box #home {
+    color: black;
+  }
+  body #box .accordion-button:not(.collapsed) {
+    color: black;
+    background-color: white;
+    box-shadow: none;
+    border: none;
+  }
+  body #box .accordion-button:focus {
+    border-color: white;
+  }
+  body #box .nav {
+    color: black;
+  }
+  body #box a {
+    color: black;
+  }
+  body #box .accordion-button:focus {
+    box-shadow: none;
+  }
+  body #box #main {
+    margin-top: 10px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  body #box #main .usertext {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  body #box #main .userinfo {
+    margin-left: 50px;
+  }
+  body #box #main img {
+    display: block;
+    width: 150px;
+    height: 180px;
+    background-color: pink;
+  }
+  #modal_body {
+    width: 100%;
+  }
+  

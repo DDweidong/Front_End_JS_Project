@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adduser</title>
+    <link rel="stylesheet" href="../../../../lib/bootstrap(框架)/css/bootstrap.min.css">
+    <script src="../../../../lib/bootstrap(框架)/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../common/styles/index.css">
+</head>
+<body>
+    <!--动态渲染-->
+    <div id="topbar">
+      
+    </div>
+
+    <!--栅格-->
+    <div id="box">
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-2 sidemenu">
+                
+              </div>
+
+              <div class="col-10 " id="content">
+                <div id="main">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">用户管理 /添加用户：</li>
+                    </ol>
+                  </nav>
+                <!---->
+                  <form id="adduserinfo"><!--提交-->
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">用户名:</label>
+                      <input type="text" class="form-control" required id="pusername">
+                    </div>   
+    
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">密码:</label>
+                      <input type="password" class="form-control"required id="password">
+                    </div>        
+    
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">个人介绍:</label>
+                      <textarea  class="form-control" id="introduce" rows="3"></textarea>
+                    </div>
+                    <!--头像-->
+                    <div class="mb-3">
+                      <label for="photofile" class="form-label">头像:</label>
+                      <input type="file" class="form-control"  id="photofile">
+                    </div>
+                    <button type="submit" class="btn btn-primary">添加用户</button>
+
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <script src="../../common/util/loadview.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

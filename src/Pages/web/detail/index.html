@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>news-detail</title>
+    <link rel="stylesheet" href="../../../lib/bootstrap(框架)/css/bootstrap.min.css">
+    <script src="../../../lib/bootstrap(框架)/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../assets/style/index.css">
+    <!--引入echars-->
+    <script src="../../../lib/bootstrap(框架)/js/echars.js"></script>
+
+</head>
+<body>
+    <!--动态渲染-->
+    <div id="topbar">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">新闻网站</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../news/index.html" id="news">新闻中心</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../admin/view/login/index.html">登录</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--栅格-->
+    <div id="box">
+        <div id="title"></div>
+        <p class="card-text" style="font-size: 18px; color:gray"><strong>作者：</strong><span id="author"></span></p>
+        <hr>
+        <div id="content">
+            <div id="news-content"></div>
+        </div>
+        <br>
+        <hr>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

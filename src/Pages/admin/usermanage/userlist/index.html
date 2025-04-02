@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>userlist</title>
+    <link rel="stylesheet" href="../../../../lib/bootstrap(框架)/css/bootstrap.min.css">
+    <script src="../../../../lib/bootstrap(框架)/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../common/styles/index.css">
+</head>
+<body>
+    <!--动态渲染-->
+    <div id="topbar">
+    </div>
+
+    <!--栅格-->
+    <div id="box">
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-2 sidemenu">
+                
+              </div>
+
+              <div class="col-10 " id="content">
+                <div id="main">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">用户管理 /用户列表：</li>
+                    </ol>
+                  </nav>
+                  <!--列表-->
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">用户名</th>
+                        <th scope="col">头像</th>
+                        <th scope="col">操作</th>
+                      </tr>
+                    </thead>
+                    <tbody id="listbody">
+                      
+                    </tbody>
+                  </table>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <!-- Modal -->
+  <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">编辑用户</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="edit"><!--提交-->
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">用户名:</label>
+              <input type="text" class="form-control" required id="edit-name">
+            </div>   
+
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">密码:</label>
+              <input type="text" class="form-control"required id="edit-password"><!--密码可见-->
+            </div>        
+
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">个人介绍:</label>
+              <textarea  class="form-control" id="edit-introduce" rows="3"></textarea>
+            </div>
+            <!--头像-->
+            <div class="mb-3">
+              <label for="photofile" class="form-label">头像:</label>
+              <input type="file" class="form-control"  id="photofile">
+            </div>
+            <!--<button type="submit" class="btn btn-primary">添加用户</button>-->
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+          <button type="button" class="btn btn-primary" id="confirm">更新</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="delModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">提示信息</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <strong>确定删除该用户</strong>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+          <button type="button" class="btn btn-primary" id="delconfirm">确定</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="../../common/util/loadview.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

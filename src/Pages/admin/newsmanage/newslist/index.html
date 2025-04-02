@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newslist</title>
+    <link rel="stylesheet" href="../../../../lib/bootstrap(框架)/css/bootstrap.min.css">
+    <script src="../../../../lib/bootstrap(框架)/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../common/styles/index.css">
+</head>
+<body>
+    <!--动态渲染-->
+    <div id="topbar">
+  
+    </div>
+
+    <!--栅格-->
+    <div id="box">
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-2 sidemenu">
+                
+              </div>
+
+              <div class="col-10 " id="content">
+                <div id="main">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">新闻管理 /新闻列表：</li>
+                    </ol>
+                  </nav>
+                  <!--列表-->
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">新闻标题</th>
+                        <th scope="col">分类</th>
+                        <th scope="col">操作</th>
+                      </tr>
+                    </thead>
+                    <tbody id="listbody">
+                      
+                    </tbody>
+                </table>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="modal fade" id="lookModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">预览新闻</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="modal_body" style="border: 1px solid #4deded;">
+
+          
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">完成</button>
+            <!--<button type="button" class="btn btn-primary" id="delconfirm">确定</button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="modal fade" id="delModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">提示信息</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <strong>确定删除该新闻</strong>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary" id="delconfirm">确定</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../common/util/loadview.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

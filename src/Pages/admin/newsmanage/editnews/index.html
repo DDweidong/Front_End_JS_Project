@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>editunews</title>
+    <link rel="stylesheet" href="../../../../lib/bootstrap(框架)/css/bootstrap.min.css">
+    <script src="../../../../lib/bootstrap(框架)/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../common/styles/index.css">
+    <link href="https://unpkg.com/@wangeditor/editor@latest/dist/css/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/@wangeditor/editor@latest/dist/index.js"></script>
+    <style>
+      #editor—wrapper {
+        border: 1px solid #ccc;
+        z-index: 100; /* 按需定义 */
+      }
+      #toolbar-container { border-bottom: 1px solid #ccc; }
+      #editor-container { height: 500px; }
+    </style>
+
+</head>
+<body>
+    <!--动态渲染-->
+    <div id="topbar">
+    </div>
+
+    <!--栅格-->
+    <div id="box">
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-2 sidemenu">
+        
+              </div>
+
+              <div class="col-10 " id="content">
+                <div id="main">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">新闻管理 /更新新闻：</li>
+                    </ol>
+                  </nav>
+                <!---->
+                  <form id="newsinfo"><!--提交-->
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">新闻标题:</label>
+                      <input type="text" class="form-control" required id="newstitle">
+                    </div>   
+    
+                    <!--<div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">密码:</label>
+                      <input type="password" class="form-control"required id="password">
+                    </div>-->        
+    
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">新闻内容:</label>
+                      <div id="content" style="border: 1px solid #ced4da">
+                        <div id="toolbar-container"><!-- 工具栏 --></div>
+                        <div id="editor-container"><!-- 编辑器 --></div>
+                    </div>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">新闻类型:</label>
+                      <select class="form-select" aria-label="Default select example" id="sort">
+                        <option value="0">最新动态</option>
+                        <option value="1">典型案例</option>
+                        <option value="2">通知公告</option>
+                      </select>
+                    </div> 
+
+                    <!--头像-->
+                    <div class="mb-3">
+                      <label for="photofile" class="form-label">新闻封面:</label>
+                      <input type="file" class="form-control"  id="photofile">
+                    </div>
+                    <button type="submit" class="btn btn-success" id="addnews">完成</button>
+
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <script src="../../common/util/loadview.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
